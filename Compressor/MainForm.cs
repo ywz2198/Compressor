@@ -52,10 +52,18 @@ namespace Compressor
         {
             Initializesp();
             Random x = new Random();
-            for(int i = 1; i < 100; i++)
-            {
-                chart1.Series[0].Points.AddY(x.Next(28));
-            }
+            chart1.Series[0].Points.AddXY(0.1,400);
+            chart1.Series[0].Points.AddXY(0.4,350);
+            chart1.Series[0].Points.AddXY(0.6, 330);
+            chart1.Series[0].Points.AddXY(0.8, 310);
+            chart1.Series[1].Points.AddXY(0.1, 2.2);
+            chart1.Series[1].Points.AddXY(0.4, 2.6);
+            chart1.Series[1].Points.AddXY(0.6, 2.9);
+            chart1.Series[1].Points.AddXY(0.8, 3.0);
+            chart1.Series[2].Points.AddXY(2.2, 400);
+            chart1.Series[2].Points.AddXY(2.6, 350);
+            chart1.Series[2].Points.AddXY(2.9, 330);
+            chart1.Series[2].Points.AddXY(3.0, 310);
         }
         #endregion
         private void 退出ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -166,7 +174,7 @@ namespace Compressor
         #endregion
         private void teststart_Click(object sender, EventArgs e)
         {
-
+            ExportChart("dd", chart1);
         }
         
     }
