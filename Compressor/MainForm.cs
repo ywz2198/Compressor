@@ -64,6 +64,13 @@ namespace Compressor
             chart1.Series[2].Points.AddXY(2.6, 350);
             chart1.Series[2].Points.AddXY(2.9, 330);
             chart1.Series[2].Points.AddXY(3.0, 310);
+
+            for(int i = 1; i < 67; i++)
+            {
+                chart2.Series[0].Points.AddXY(i, (double)i / 50+x.NextDouble()/30);
+            }
+            for (int i = 66; i < 101; i++)
+                chart2.Series[0].Points.AddXY(i, 1.32 - (double)(i-66) / 26 + x.NextDouble() / 30);
         }
         #endregion
         private void 退出ToolStripMenuItem_Click(object sender, EventArgs e)
