@@ -172,6 +172,31 @@ namespace Compressor
             Closegetwork.Enabled = false;
         }
         #endregion
+        private void chart1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void getinfo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void teststop_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void testend_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void savedata_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void teststart_Click(object sender, EventArgs e)
         {
             ExportChart("dd", chart1);
