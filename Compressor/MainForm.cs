@@ -21,7 +21,7 @@ namespace Compressor
         string[] Stage = new string[12];
         StringBuilder baudrate = new StringBuilder(255);//基本数据初始化
         StringBuilder portname = new StringBuilder(255);
-        
+        public static double[] x = new double[100] ;
         string user, work;
         public static SerialPort sp = new SerialPort();
         string filename = AppDomain.CurrentDomain.BaseDirectory + "control.ini";
@@ -35,7 +35,6 @@ namespace Compressor
         public MainForm()
         {
             InitializeComponent();
-
         }
         private void Initializesp()
         {
@@ -77,13 +76,7 @@ namespace Compressor
         {
             Application.Exit();
         }
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
-        {
-            if (checkBox1.Checked == true)
-                chart1.Series[0].Enabled = true;
-            else
-                chart1.Series[0].Enabled = false;
-        }
+     
 
         private void timer1_Tick(object sender, EventArgs e)
         {
@@ -110,7 +103,7 @@ namespace Compressor
             }
         }//连接开关
 
-       
+        
         public void ExportChart(string fileName, Chart chart1)//保存图片
         {
             string GR_Path = @"D:";
