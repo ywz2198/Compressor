@@ -47,7 +47,7 @@ namespace Compressor
             sp.Open();
             
         }
-        
+           
         private void MainForm_Load(object sender, EventArgs e)//启动预备
         {
            
@@ -72,6 +72,7 @@ namespace Compressor
             }
             for (int i = 66; i < 101; i++)
                 chart2.Series[0].Points.AddXY(i, 1.32 - (double)(i-66) / 26 + x.NextDouble() / 30);
+            
         }
         #endregion
         private void 退出ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -93,7 +94,7 @@ namespace Compressor
         }
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
-            
+
             StringFormat sf = new StringFormat();
             sf.Alignment = StringAlignment.Center;//居中打印
             StringFormat sf2 = new StringFormat();
@@ -129,6 +130,7 @@ namespace Compressor
 
         private void button5_Click(object sender, EventArgs e)
         {
+            Initializesp();
             if (sp.IsOpen == false)
             {
                 testcon.Text = "关闭连接";
@@ -203,7 +205,7 @@ namespace Compressor
             }
         }
         }
-        
+
 
         private void Closegetwork_Click(object sender, EventArgs e)
         {
