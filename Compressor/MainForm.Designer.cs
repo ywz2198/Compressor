@@ -29,19 +29,18 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea19 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea20 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea21 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series19 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series20 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series21 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea22 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea23 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea24 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series22 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series23 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series24 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.文件数据ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.数据导出ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -58,12 +57,35 @@
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
+            this.progressBar2 = new System.Windows.Forms.ProgressBar();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.label24 = new System.Windows.Forms.Label();
+            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.label26 = new System.Windows.Forms.Label();
+            this.textBox19 = new System.Windows.Forms.TextBox();
+            this.label28 = new System.Windows.Forms.Label();
+            this.textBox21 = new System.Windows.Forms.TextBox();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.textBox23 = new System.Windows.Forms.TextBox();
             this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.textBox13 = new System.Windows.Forms.TextBox();
             this.teststop = new System.Windows.Forms.Button();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.textBox12 = new System.Windows.Forms.TextBox();
@@ -73,7 +95,6 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox10 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.textBox8 = new System.Windows.Forms.TextBox();
@@ -88,10 +109,8 @@
             this.label9 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.savedata = new System.Windows.Forms.Button();
             this.testend = new System.Windows.Forms.Button();
             this.teststart = new System.Windows.Forms.Button();
@@ -101,6 +120,14 @@
             this.TEST = new System.Windows.Forms.TabControl();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
             this.Closegetwork = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
@@ -115,6 +142,8 @@
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.tabPage3.SuspendLayout();
+            this.groupBox5.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
             this.tabPage1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -137,7 +166,7 @@
             this.帮助信息ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1512, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1523, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -153,13 +182,13 @@
             // 数据导出ToolStripMenuItem
             // 
             this.数据导出ToolStripMenuItem.Name = "数据导出ToolStripMenuItem";
-            this.数据导出ToolStripMenuItem.Size = new System.Drawing.Size(144, 26);
+            this.数据导出ToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.数据导出ToolStripMenuItem.Text = "数据导入";
             // 
             // 数据导入ToolStripMenuItem
             // 
             this.数据导入ToolStripMenuItem.Name = "数据导入ToolStripMenuItem";
-            this.数据导入ToolStripMenuItem.Size = new System.Drawing.Size(144, 26);
+            this.数据导入ToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.数据导入ToolStripMenuItem.Text = "数据导出";
             // 
             // 系统设置ToolStripMenuItem
@@ -173,7 +202,7 @@
             // 硬件设置ToolStripMenuItem
             // 
             this.硬件设置ToolStripMenuItem.Name = "硬件设置ToolStripMenuItem";
-            this.硬件设置ToolStripMenuItem.Size = new System.Drawing.Size(144, 26);
+            this.硬件设置ToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.硬件设置ToolStripMenuItem.Text = "硬件设置";
             this.硬件设置ToolStripMenuItem.Click += new System.EventHandler(this.硬件设置ToolStripMenuItem_Click);
             // 
@@ -203,20 +232,20 @@
             // 关于ToolStripMenuItem
             // 
             this.关于ToolStripMenuItem.Name = "关于ToolStripMenuItem";
-            this.关于ToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.关于ToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.关于ToolStripMenuItem.Text = "关于我们";
             // 
             // 注意事项ToolStripMenuItem
             // 
             this.注意事项ToolStripMenuItem.Name = "注意事项ToolStripMenuItem";
-            this.注意事项ToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.注意事项ToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.注意事项ToolStripMenuItem.Text = "帮助/注意事项";
             this.注意事项ToolStripMenuItem.Click += new System.EventHandler(this.注意事项ToolStripMenuItem_Click);
             // 
             // 退出ToolStripMenuItem
             // 
             this.退出ToolStripMenuItem.Name = "退出ToolStripMenuItem";
-            this.退出ToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.退出ToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.退出ToolStripMenuItem.Text = "退出";
             this.退出ToolStripMenuItem.Click += new System.EventHandler(this.退出ToolStripMenuItem_Click);
             // 
@@ -229,9 +258,9 @@
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 880);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 850);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(1512, 25);
+            this.statusStrip1.Size = new System.Drawing.Size(1523, 25);
             this.statusStrip1.TabIndex = 2;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -243,57 +272,306 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.button1);
+            this.tabPage3.Controls.Add(this.progressBar2);
+            this.tabPage3.Controls.Add(this.button2);
+            this.tabPage3.Controls.Add(this.button3);
+            this.tabPage3.Controls.Add(this.button4);
+            this.tabPage3.Controls.Add(this.groupBox5);
+            this.tabPage3.Controls.Add(this.groupBox4);
             this.tabPage3.Controls.Add(this.chart2);
             this.tabPage3.Location = new System.Drawing.Point(4, 44);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1493, 799);
+            this.tabPage3.Size = new System.Drawing.Size(1499, 799);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "充放气测试";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(777, 712);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(102, 35);
+            this.button1.TabIndex = 38;
+            this.button1.Text = "暂停测试";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // progressBar2
+            // 
+            this.progressBar2.Location = new System.Drawing.Point(399, 754);
+            this.progressBar2.Name = "progressBar2";
+            this.progressBar2.Size = new System.Drawing.Size(1067, 12);
+            this.progressBar2.TabIndex = 37;
+            // 
+            // button2
+            // 
+            this.button2.Enabled = false;
+            this.button2.Location = new System.Drawing.Point(1137, 712);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(102, 35);
+            this.button2.TabIndex = 36;
+            this.button2.Text = "保存数据";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Enabled = false;
+            this.button3.Location = new System.Drawing.Point(952, 713);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(102, 35);
+            this.button3.TabIndex = 35;
+            this.button3.Text = "终止测试";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(611, 713);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(102, 35);
+            this.button4.TabIndex = 34;
+            this.button4.Text = "开始测试";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.textBox2);
+            this.groupBox5.Controls.Add(this.textBox15);
+            this.groupBox5.Controls.Add(this.label2);
+            this.groupBox5.Controls.Add(this.label23);
+            this.groupBox5.Location = new System.Drawing.Point(33, 270);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(373, 91);
+            this.groupBox5.TabIndex = 30;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "试验条件";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(261, 41);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
+            this.textBox2.Size = new System.Drawing.Size(70, 25);
+            this.textBox2.TabIndex = 20;
+            this.textBox2.Text = "2.5";
+            // 
+            // textBox15
+            // 
+            this.textBox15.Location = new System.Drawing.Point(79, 41);
+            this.textBox15.Name = "textBox15";
+            this.textBox15.ReadOnly = true;
+            this.textBox15.Size = new System.Drawing.Size(72, 25);
+            this.textBox15.TabIndex = 19;
+            this.textBox15.Text = "2.5";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(173, 44);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(67, 15);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "电机电压";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(6, 44);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(67, 15);
+            this.label23.TabIndex = 0;
+            this.label23.Text = "原有气压";
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.label22);
+            this.groupBox4.Controls.Add(this.textBox16);
+            this.groupBox4.Controls.Add(this.label1);
+            this.groupBox4.Controls.Add(this.textBox14);
+            this.groupBox4.Controls.Add(this.label24);
+            this.groupBox4.Controls.Add(this.textBox17);
+            this.groupBox4.Controls.Add(this.textBox18);
+            this.groupBox4.Controls.Add(this.label26);
+            this.groupBox4.Controls.Add(this.textBox19);
+            this.groupBox4.Controls.Add(this.label28);
+            this.groupBox4.Controls.Add(this.textBox21);
+            this.groupBox4.Controls.Add(this.label29);
+            this.groupBox4.Controls.Add(this.label30);
+            this.groupBox4.Controls.Add(this.textBox23);
+            this.groupBox4.Location = new System.Drawing.Point(33, 33);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(364, 205);
+            this.groupBox4.TabIndex = 29;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "参数";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(91, 27);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(37, 15);
+            this.label22.TabIndex = 28;
+            this.label22.Text = "时间";
+            // 
+            // textBox16
+            // 
+            this.textBox16.Location = new System.Drawing.Point(164, 24);
+            this.textBox16.Name = "textBox16";
+            this.textBox16.ReadOnly = true;
+            this.textBox16.Size = new System.Drawing.Size(100, 25);
+            this.textBox16.TabIndex = 29;
+            this.textBox16.Text = "2.5";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 71);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(67, 15);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "电机功率";
+            // 
+            // textBox14
+            // 
+            this.textBox14.Location = new System.Drawing.Point(255, 118);
+            this.textBox14.Name = "textBox14";
+            this.textBox14.ReadOnly = true;
+            this.textBox14.Size = new System.Drawing.Size(100, 25);
+            this.textBox14.TabIndex = 27;
+            this.textBox14.Text = "2.5";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(6, 121);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(67, 15);
+            this.label24.TabIndex = 11;
+            this.label24.Text = "实时流速";
+            // 
+            // textBox17
+            // 
+            this.textBox17.Location = new System.Drawing.Point(255, 68);
+            this.textBox17.Name = "textBox17";
+            this.textBox17.ReadOnly = true;
+            this.textBox17.Size = new System.Drawing.Size(100, 25);
+            this.textBox17.TabIndex = 24;
+            this.textBox17.Text = "2.5";
+            // 
+            // textBox18
+            // 
+            this.textBox18.Location = new System.Drawing.Point(79, 118);
+            this.textBox18.Name = "textBox18";
+            this.textBox18.ReadOnly = true;
+            this.textBox18.Size = new System.Drawing.Size(100, 25);
+            this.textBox18.TabIndex = 23;
+            this.textBox18.Text = "2.5";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(182, 121);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(67, 15);
+            this.label26.TabIndex = 13;
+            this.label26.Text = "最高流速";
+            // 
+            // textBox19
+            // 
+            this.textBox19.Location = new System.Drawing.Point(79, 168);
+            this.textBox19.Name = "textBox19";
+            this.textBox19.ReadOnly = true;
+            this.textBox19.Size = new System.Drawing.Size(100, 25);
+            this.textBox19.TabIndex = 22;
+            this.textBox19.Text = "2.5";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(6, 171);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(67, 15);
+            this.label28.TabIndex = 15;
+            this.label28.Text = "实时气压";
+            // 
+            // textBox21
+            // 
+            this.textBox21.Location = new System.Drawing.Point(255, 168);
+            this.textBox21.Name = "textBox21";
+            this.textBox21.ReadOnly = true;
+            this.textBox21.Size = new System.Drawing.Size(100, 25);
+            this.textBox21.TabIndex = 20;
+            this.textBox21.Text = "2.5";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(182, 71);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(67, 15);
+            this.label29.TabIndex = 16;
+            this.label29.Text = "最高电压";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(182, 171);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(67, 15);
+            this.label30.TabIndex = 17;
+            this.label30.Text = "最高气压";
+            // 
+            // textBox23
+            // 
+            this.textBox23.Location = new System.Drawing.Point(79, 68);
+            this.textBox23.Name = "textBox23";
+            this.textBox23.ReadOnly = true;
+            this.textBox23.Size = new System.Drawing.Size(100, 25);
+            this.textBox23.TabIndex = 18;
+            this.textBox23.Text = "2.5";
+            // 
             // chart2
             // 
-            chartArea19.Name = "ChartArea1";
-            chartArea19.Position.Auto = false;
-            chartArea19.Position.Height = 52F;
-            chartArea19.Position.Width = 80F;
-            chartArea19.Position.X = 3F;
-            chartArea19.Position.Y = 3F;
-            chartArea20.Name = "ChartArea2";
-            chartArea20.Position.Auto = false;
-            chartArea20.Position.Height = 40F;
-            chartArea20.Position.Width = 45F;
-            chartArea20.Position.X = 3F;
-            chartArea20.Position.Y = 58F;
-            chartArea21.Name = "ChartArea3";
-            chartArea21.Position.Auto = false;
-            chartArea21.Position.Height = 40F;
-            chartArea21.Position.Width = 45F;
-            chartArea21.Position.X = 50F;
-            chartArea21.Position.Y = 58F;
-            this.chart2.ChartAreas.Add(chartArea19);
-            this.chart2.ChartAreas.Add(chartArea20);
-            this.chart2.ChartAreas.Add(chartArea21);
-            legend4.Name = "Legend1";
-            this.chart2.Legends.Add(legend4);
-            this.chart2.Location = new System.Drawing.Point(541, 6);
+            chartArea1.AxisX.MajorGrid.Interval = 10D;
+            chartArea1.AxisX.Title = "时间（s）";
+            chartArea1.AxisY.MajorGrid.Enabled = false;
+            chartArea1.AxisY.MajorTickMark.Interval = 0.1D;
+            chartArea1.AxisY.Title = "气压（Mpa）";
+            chartArea1.Name = "ChartArea1";
+            chartArea1.Position.Auto = false;
+            chartArea1.Position.Height = 52F;
+            chartArea1.Position.Width = 95F;
+            chartArea1.Position.Y = 3F;
+            chartArea2.Name = "ChartArea2";
+            chartArea2.Position.Auto = false;
+            chartArea2.Position.Height = 40F;
+            chartArea2.Position.Width = 45F;
+            chartArea2.Position.X = 3F;
+            chartArea2.Position.Y = 58F;
+            chartArea3.Name = "ChartArea3";
+            chartArea3.Position.Auto = false;
+            chartArea3.Position.Height = 40F;
+            chartArea3.Position.Width = 45F;
+            chartArea3.Position.X = 50F;
+            chartArea3.Position.Y = 58F;
+            this.chart2.ChartAreas.Add(chartArea1);
+            this.chart2.ChartAreas.Add(chartArea2);
+            this.chart2.ChartAreas.Add(chartArea3);
+            this.chart2.Location = new System.Drawing.Point(538, 6);
             this.chart2.Name = "chart2";
-            series19.ChartArea = "ChartArea1";
-            series19.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series19.Legend = "Legend1";
-            series19.Name = "Series1";
-            series20.ChartArea = "ChartArea2";
-            series20.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series20.Legend = "Legend1";
-            series20.Name = "Series2";
-            series21.ChartArea = "ChartArea3";
-            series21.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series21.Legend = "Legend1";
-            series21.Name = "Series3";
-            this.chart2.Series.Add(series19);
-            this.chart2.Series.Add(series20);
-            this.chart2.Series.Add(series21);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series1.Name = "Series1";
+            series2.ChartArea = "ChartArea2";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series2.Name = "Series2";
+            series3.ChartArea = "ChartArea3";
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series3.Name = "Series3";
+            this.chart2.Series.Add(series1);
+            this.chart2.Series.Add(series2);
+            this.chart2.Series.Add(series3);
             this.chart2.Size = new System.Drawing.Size(946, 701);
             this.chart2.TabIndex = 0;
             this.chart2.Text = "chart2";
@@ -302,12 +580,9 @@
             // 
             this.tabPage1.Controls.Add(this.textBox13);
             this.tabPage1.Controls.Add(this.teststop);
-            this.tabPage1.Controls.Add(this.checkBox3);
-            this.tabPage1.Controls.Add(this.checkBox2);
             this.tabPage1.Controls.Add(this.progressBar1);
             this.tabPage1.Controls.Add(this.groupBox2);
             this.tabPage1.Controls.Add(this.groupBox1);
-            this.tabPage1.Controls.Add(this.checkBox1);
             this.tabPage1.Controls.Add(this.savedata);
             this.tabPage1.Controls.Add(this.testend);
             this.tabPage1.Controls.Add(this.teststart);
@@ -317,7 +592,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 44);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1493, 799);
+            this.tabPage1.Size = new System.Drawing.Size(1499, 799);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "泵测试";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -337,27 +612,6 @@
             this.teststop.TabIndex = 33;
             this.teststop.Text = "暂停测试";
             this.teststop.UseVisualStyleBackColor = true;
-            this.teststop.Click += new System.EventHandler(this.teststop_Click);
-            // 
-            // checkBox3
-            // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(1390, 693);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(59, 19);
-            this.checkBox3.TabIndex = 32;
-            this.checkBox3.Text = "功率";
-            this.checkBox3.UseVisualStyleBackColor = true;
-            // 
-            // checkBox2
-            // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(1390, 653);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(59, 19);
-            this.checkBox2.TabIndex = 31;
-            this.checkBox2.Text = "流量";
-            this.checkBox2.UseVisualStyleBackColor = true;
             // 
             // progressBar1
             // 
@@ -402,9 +656,9 @@
             this.label13.AutoSize = true;
             this.label13.Location = new System.Drawing.Point(173, 44);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(82, 15);
+            this.label13.Size = new System.Drawing.Size(67, 15);
             this.label13.TabIndex = 1;
-            this.label13.Text = "电磁阀电压";
+            this.label13.Text = "电机电压";
             // 
             // label12
             // 
@@ -419,7 +673,6 @@
             // 
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.textBox10);
-            this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.textBox9);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.textBox8);
@@ -434,7 +687,6 @@
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.textBox3);
             this.groupBox1.Controls.Add(this.label10);
-            this.groupBox1.Controls.Add(this.textBox2);
             this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Location = new System.Drawing.Point(23, 46);
@@ -447,11 +699,11 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 21);
+            this.label3.Location = new System.Drawing.Point(6, 52);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(67, 15);
             this.label3.TabIndex = 9;
-            this.label3.Text = "电机电压";
+            this.label3.Text = "电机功率";
             // 
             // textBox10
             // 
@@ -461,15 +713,6 @@
             this.textBox10.Size = new System.Drawing.Size(100, 25);
             this.textBox10.TabIndex = 27;
             this.textBox10.Text = "2.5";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 59);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(67, 15);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "电机电流";
             // 
             // textBox9
             // 
@@ -485,13 +728,13 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(6, 97);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(67, 15);
+            this.label4.Size = new System.Drawing.Size(75, 15);
             this.label4.TabIndex = 10;
-            this.label4.Text = "实时气压";
+            this.label4.Text = "实时气压1";
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(255, 56);
+            this.textBox8.Location = new System.Drawing.Point(157, 18);
             this.textBox8.Name = "textBox8";
             this.textBox8.ReadOnly = true;
             this.textBox8.Size = new System.Drawing.Size(100, 25);
@@ -509,7 +752,7 @@
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(255, 18);
+            this.textBox7.Location = new System.Drawing.Point(255, 49);
             this.textBox7.Name = "textBox7";
             this.textBox7.ReadOnly = true;
             this.textBox7.Size = new System.Drawing.Size(100, 25);
@@ -521,9 +764,9 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(182, 97);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(67, 15);
+            this.label6.Size = new System.Drawing.Size(75, 15);
             this.label6.TabIndex = 12;
-            this.label6.Text = "最高气压";
+            this.label6.Text = "最高气压1";
             // 
             // textBox6
             // 
@@ -555,11 +798,11 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(182, 59);
+            this.label8.Location = new System.Drawing.Point(84, 21);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(67, 15);
+            this.label8.Size = new System.Drawing.Size(37, 15);
             this.label8.TabIndex = 14;
-            this.label8.Text = "最高电流";
+            this.label8.Text = "时间";
             // 
             // textBox4
             // 
@@ -575,9 +818,9 @@
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(6, 173);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(67, 15);
+            this.label9.Size = new System.Drawing.Size(75, 15);
             this.label9.TabIndex = 15;
-            this.label9.Text = "实时温度";
+            this.label9.Text = "实时气压2";
             // 
             // textBox3
             // 
@@ -591,51 +834,29 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(182, 21);
+            this.label10.Location = new System.Drawing.Point(182, 52);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(67, 15);
             this.label10.TabIndex = 16;
-            this.label10.Text = "最高电压";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(79, 56);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(100, 25);
-            this.textBox2.TabIndex = 19;
-            this.textBox2.Text = "2.5";
+            this.label10.Text = "最高功率";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Location = new System.Drawing.Point(182, 173);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(67, 15);
+            this.label11.Size = new System.Drawing.Size(75, 15);
             this.label11.TabIndex = 17;
-            this.label11.Text = "最高温度";
+            this.label11.Text = "最高气压2";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(79, 18);
+            this.textBox1.Location = new System.Drawing.Point(79, 49);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(100, 25);
             this.textBox1.TabIndex = 18;
             this.textBox1.Text = "2.5";
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Checked = true;
-            this.checkBox1.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox1.Location = new System.Drawing.Point(1390, 613);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(59, 19);
-            this.checkBox1.TabIndex = 7;
-            this.checkBox1.Text = "压力";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // savedata
             // 
@@ -646,7 +867,6 @@
             this.savedata.TabIndex = 6;
             this.savedata.Text = "保存数据";
             this.savedata.UseVisualStyleBackColor = true;
-            this.savedata.Click += new System.EventHandler(this.savedata_Click);
             // 
             // testend
             // 
@@ -657,7 +877,6 @@
             this.testend.TabIndex = 5;
             this.testend.Text = "终止测试";
             this.testend.UseVisualStyleBackColor = true;
-            this.testend.Click += new System.EventHandler(this.testend_Click);
             // 
             // teststart
             // 
@@ -686,86 +905,86 @@
             this.getinfo.TabIndex = 2;
             this.getinfo.Text = "确认设备";
             this.getinfo.UseVisualStyleBackColor = true;
-            this.getinfo.Click += new System.EventHandler(this.getinfo_Click);
             // 
             // chart1
             // 
-            chartArea22.AlignmentOrientation = ((System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations)((System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.Vertical | System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.Horizontal)));
-            chartArea22.AxisX.MajorGrid.Enabled = false;
-            chartArea22.AxisX.MajorGrid.Interval = 2D;
-            chartArea22.AxisX.MajorTickMark.Interval = 0.2D;
-            chartArea22.AxisX.Title = "排气压力（Mpa）";
-            chartArea22.AxisY.MajorGrid.Enabled = false;
-            chartArea22.AxisY.MajorGrid.Interval = 5D;
-            chartArea22.AxisY.MajorTickMark.Interval = 100D;
-            chartArea22.AxisY.Title = "排气量（L/min）";
-            chartArea22.Name = "流压";
-            chartArea22.Position.Auto = false;
-            chartArea22.Position.Height = 45F;
-            chartArea22.Position.Width = 45F;
-            chartArea22.Position.X = 3F;
-            chartArea22.Position.Y = 3F;
-            chartArea23.AlignmentOrientation = System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.Horizontal;
-            chartArea23.AxisX.MajorGrid.Enabled = false;
-            chartArea23.AxisX.MajorTickMark.Interval = 0.2D;
-            chartArea23.AxisX.Title = "排气压力（Mpa）";
-            chartArea23.AxisY.MajorGrid.Enabled = false;
-            chartArea23.AxisY.MajorTickMark.Interval = 0.5D;
-            chartArea23.AxisY.Title = "功率（KW）";
-            chartArea23.Name = "功压";
-            chartArea23.Position.Auto = false;
-            chartArea23.Position.Height = 45F;
-            chartArea23.Position.Width = 45F;
-            chartArea23.Position.X = 3F;
-            chartArea23.Position.Y = 50F;
-            chartArea24.AxisX.MajorGrid.Enabled = false;
-            chartArea24.AxisX.MajorTickMark.Interval = 0.5D;
-            chartArea24.AxisX.Title = "功率（KW）";
-            chartArea24.AxisY.MajorGrid.Enabled = false;
-            chartArea24.AxisY.MajorTickMark.Interval = 100D;
-            chartArea24.AxisY.Title = "排气量（L/min）";
-            chartArea24.Name = "流功";
-            chartArea24.Position.Auto = false;
-            chartArea24.Position.Height = 45F;
-            chartArea24.Position.Width = 45F;
-            chartArea24.Position.X = 50F;
-            chartArea24.Position.Y = 50F;
-            this.chart1.ChartAreas.Add(chartArea22);
-            this.chart1.ChartAreas.Add(chartArea23);
-            this.chart1.ChartAreas.Add(chartArea24);
-            this.chart1.Location = new System.Drawing.Point(360, 6);
+            chartArea4.AlignmentOrientation = ((System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations)((System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.Vertical | System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.Horizontal)));
+            chartArea4.AxisX.MajorGrid.Enabled = false;
+            chartArea4.AxisX.MajorGrid.Interval = 2D;
+            chartArea4.AxisX.MajorTickMark.Interval = 0.2D;
+            chartArea4.AxisX.Minimum = 0D;
+            chartArea4.AxisX.Title = "排气压力（Mpa）";
+            chartArea4.AxisY.MajorGrid.Enabled = false;
+            chartArea4.AxisY.MajorGrid.Interval = 5D;
+            chartArea4.AxisY.MajorTickMark.Interval = 100D;
+            chartArea4.AxisY.Title = "排气量（L/min）";
+            chartArea4.Name = "流压";
+            chartArea4.Position.Auto = false;
+            chartArea4.Position.Height = 45F;
+            chartArea4.Position.Width = 45F;
+            chartArea4.Position.X = 3F;
+            chartArea4.Position.Y = 3F;
+            chartArea5.AlignmentOrientation = System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.Horizontal;
+            chartArea5.AxisX.MajorGrid.Enabled = false;
+            chartArea5.AxisX.MajorTickMark.Interval = 0.2D;
+            chartArea5.AxisX.Minimum = 0D;
+            chartArea5.AxisX.Title = "排气压力（Mpa）";
+            chartArea5.AxisY.MajorGrid.Enabled = false;
+            chartArea5.AxisY.MajorTickMark.Interval = 0.5D;
+            chartArea5.AxisY.Title = "功率（KW）";
+            chartArea5.Name = "功压";
+            chartArea5.Position.Auto = false;
+            chartArea5.Position.Height = 45F;
+            chartArea5.Position.Width = 45F;
+            chartArea5.Position.X = 3F;
+            chartArea5.Position.Y = 50F;
+            chartArea6.AxisX.MajorGrid.Enabled = false;
+            chartArea6.AxisX.MajorTickMark.Interval = 0.5D;
+            chartArea6.AxisX.Title = "功率（KW）";
+            chartArea6.AxisY.MajorGrid.Enabled = false;
+            chartArea6.AxisY.MajorTickMark.Interval = 100D;
+            chartArea6.AxisY.Title = "排气量（L/min）";
+            chartArea6.Name = "流功";
+            chartArea6.Position.Auto = false;
+            chartArea6.Position.Height = 45F;
+            chartArea6.Position.Width = 45F;
+            chartArea6.Position.X = 50F;
+            chartArea6.Position.Y = 50F;
+            this.chart1.ChartAreas.Add(chartArea4);
+            this.chart1.ChartAreas.Add(chartArea5);
+            this.chart1.ChartAreas.Add(chartArea6);
+            this.chart1.Location = new System.Drawing.Point(447, 6);
             this.chart1.Name = "chart1";
-            series22.ChartArea = "流压";
-            series22.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series22.Color = System.Drawing.Color.Maroon;
-            series22.MarkerBorderColor = System.Drawing.Color.Black;
-            series22.MarkerColor = System.Drawing.Color.Black;
-            series22.MarkerSize = 2;
-            series22.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle;
-            series22.Name = "Series1";
-            series22.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Double;
-            series22.YValuesPerPoint = 2;
-            series23.ChartArea = "功压";
-            series23.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series23.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            series23.MarkerColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            series23.MarkerSize = 3;
-            series23.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle;
-            series23.Name = "Series2";
-            series24.ChartArea = "流功";
-            series24.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series24.Color = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            series24.MarkerColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            series24.MarkerSize = 3;
-            series24.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle;
-            series24.Name = "Series3";
-            this.chart1.Series.Add(series22);
-            this.chart1.Series.Add(series23);
-            this.chart1.Series.Add(series24);
-            this.chart1.Size = new System.Drawing.Size(1127, 665);
+            series4.ChartArea = "流压";
+            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series4.Color = System.Drawing.Color.Maroon;
+            series4.MarkerBorderColor = System.Drawing.Color.Black;
+            series4.MarkerColor = System.Drawing.Color.Black;
+            series4.MarkerSize = 2;
+            series4.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle;
+            series4.Name = "Series1";
+            series4.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Double;
+            series4.YValuesPerPoint = 2;
+            series5.ChartArea = "功压";
+            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series5.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            series5.MarkerColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            series5.MarkerSize = 3;
+            series5.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle;
+            series5.Name = "Series2";
+            series6.ChartArea = "流功";
+            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series6.Color = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            series6.MarkerColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            series6.MarkerSize = 3;
+            series6.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle;
+            series6.Name = "Series3";
+            this.chart1.Series.Add(series4);
+            this.chart1.Series.Add(series5);
+            this.chart1.Series.Add(series6);
+            this.chart1.Size = new System.Drawing.Size(1049, 670);
             this.chart1.TabIndex = 1;
             this.chart1.Text = "chart1";
-            this.chart1.Click += new System.EventHandler(this.chart1_Click);
             // 
             // TEST
             // 
@@ -776,7 +995,7 @@
             this.TEST.Location = new System.Drawing.Point(0, 31);
             this.TEST.Name = "TEST";
             this.TEST.SelectedIndex = 0;
-            this.TEST.Size = new System.Drawing.Size(1501, 847);
+            this.TEST.Size = new System.Drawing.Size(1507, 847);
             this.TEST.TabIndex = 1;
             // 
             // tabPage2
@@ -785,13 +1004,21 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 44);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1493, 799);
+            this.tabPage2.Size = new System.Drawing.Size(1499, 799);
             this.tabPage2.TabIndex = 3;
             this.tabPage2.Text = "工作状态";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.label25);
+            this.groupBox3.Controls.Add(this.label27);
+            this.groupBox3.Controls.Add(this.label31);
+            this.groupBox3.Controls.Add(this.label32);
+            this.groupBox3.Controls.Add(this.label33);
+            this.groupBox3.Controls.Add(this.label34);
+            this.groupBox3.Controls.Add(this.label35);
+            this.groupBox3.Controls.Add(this.label36);
             this.groupBox3.Controls.Add(this.Closegetwork);
             this.groupBox3.Controls.Add(this.label14);
             this.groupBox3.Controls.Add(this.label15);
@@ -807,12 +1034,84 @@
             this.groupBox3.Size = new System.Drawing.Size(361, 260);
             this.groupBox3.TabIndex = 1;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "groupBox3";
+            this.groupBox3.Text = "工位信息";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(56, 217);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(45, 15);
+            this.label25.TabIndex = 24;
+            this.label25.Text = "工位8";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(56, 190);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(45, 15);
+            this.label27.TabIndex = 23;
+            this.label27.Text = "工位7";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(56, 163);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(45, 15);
+            this.label31.TabIndex = 22;
+            this.label31.Text = "工位6";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(56, 136);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(45, 15);
+            this.label32.TabIndex = 21;
+            this.label32.Text = "工位5";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(56, 109);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(45, 15);
+            this.label33.TabIndex = 20;
+            this.label33.Text = "工位4";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Location = new System.Drawing.Point(56, 82);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(45, 15);
+            this.label34.TabIndex = 19;
+            this.label34.Text = "工位3";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Location = new System.Drawing.Point(56, 55);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(45, 15);
+            this.label35.TabIndex = 18;
+            this.label35.Text = "工位2";
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Location = new System.Drawing.Point(56, 28);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(45, 15);
+            this.label36.TabIndex = 17;
+            this.label36.Text = "工位1";
             // 
             // Closegetwork
             // 
             this.Closegetwork.Enabled = false;
-            this.Closegetwork.Location = new System.Drawing.Point(223, 132);
+            this.Closegetwork.Location = new System.Drawing.Point(204, 201);
             this.Closegetwork.Name = "Closegetwork";
             this.Closegetwork.Size = new System.Drawing.Size(106, 23);
             this.Closegetwork.TabIndex = 16;
@@ -823,78 +1122,78 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(40, 217);
+            this.label14.Location = new System.Drawing.Point(114, 217);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(63, 15);
+            this.label14.Size = new System.Drawing.Size(37, 15);
             this.label14.TabIndex = 15;
-            this.label14.Text = "label14";
+            this.label14.Text = "姓名";
             // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(40, 190);
+            this.label15.Location = new System.Drawing.Point(114, 190);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(63, 15);
+            this.label15.Size = new System.Drawing.Size(37, 15);
             this.label15.TabIndex = 14;
-            this.label15.Text = "label15";
+            this.label15.Text = "姓名";
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(40, 163);
+            this.label16.Location = new System.Drawing.Point(114, 163);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(63, 15);
+            this.label16.Size = new System.Drawing.Size(37, 15);
             this.label16.TabIndex = 13;
-            this.label16.Text = "label16";
+            this.label16.Text = "姓名";
             // 
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(40, 136);
+            this.label17.Location = new System.Drawing.Point(114, 136);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(63, 15);
+            this.label17.Size = new System.Drawing.Size(37, 15);
             this.label17.TabIndex = 12;
-            this.label17.Text = "label17";
+            this.label17.Text = "姓名";
             // 
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(40, 109);
+            this.label18.Location = new System.Drawing.Point(114, 109);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(63, 15);
+            this.label18.Size = new System.Drawing.Size(37, 15);
             this.label18.TabIndex = 11;
-            this.label18.Text = "label18";
+            this.label18.Text = "姓名";
             // 
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(40, 82);
+            this.label19.Location = new System.Drawing.Point(114, 82);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(63, 15);
+            this.label19.Size = new System.Drawing.Size(37, 15);
             this.label19.TabIndex = 10;
-            this.label19.Text = "label19";
+            this.label19.Text = "姓名";
             // 
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(40, 55);
+            this.label20.Location = new System.Drawing.Point(114, 55);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(63, 15);
+            this.label20.Size = new System.Drawing.Size(37, 15);
             this.label20.TabIndex = 9;
-            this.label20.Text = "label20";
+            this.label20.Text = "姓名";
             // 
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(40, 28);
+            this.label21.Location = new System.Drawing.Point(114, 28);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(63, 15);
+            this.label21.Size = new System.Drawing.Size(37, 15);
             this.label21.TabIndex = 8;
-            this.label21.Text = "label21";
+            this.label21.Text = "姓名";
             // 
             // stagebtn
             // 
-            this.stagebtn.Location = new System.Drawing.Point(223, 28);
+            this.stagebtn.Location = new System.Drawing.Point(204, 47);
             this.stagebtn.Name = "stagebtn";
             this.stagebtn.Size = new System.Drawing.Size(106, 23);
             this.stagebtn.TabIndex = 0;
@@ -917,14 +1216,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1512, 905);
+            this.ClientSize = new System.Drawing.Size(1523, 875);
             this.Controls.Add(this.testcon);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.TEST);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainForm";
-            this.Text = "Form1";
+            this.Text = "车用空压机试验台软件";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainForm_FormClosed);
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.menuStrip1.ResumeLayout(false);
@@ -932,6 +1231,10 @@
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.tabPage3.ResumeLayout(false);
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
@@ -967,8 +1270,6 @@
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TextBox textBox12;
@@ -978,7 +1279,6 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBox8;
@@ -993,10 +1293,8 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Button savedata;
         private System.Windows.Forms.Button testend;
         private System.Windows.Forms.Button teststart;
@@ -1021,6 +1319,39 @@
         private System.Windows.Forms.Button teststop;
         private System.Windows.Forms.TextBox textBox13;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart2;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.TextBox textBox17;
+        private System.Windows.Forms.TextBox textBox18;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.TextBox textBox19;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.TextBox textBox21;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.TextBox textBox23;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ProgressBar progressBar2;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label label36;
     }
 }
 

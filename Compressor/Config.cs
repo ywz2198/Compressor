@@ -41,6 +41,7 @@ namespace Compressor
         {
             WritePrivateProfileString("Port", "Baud", comboBox1.SelectedItem.ToString(), filename);
             WritePrivateProfileString("Port", "Name", comboBox2.SelectedItem.ToString(), filename);
+            
         }
     }
 }
