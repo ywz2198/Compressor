@@ -24,6 +24,7 @@ namespace Compressor
         public static double[] x = new double[100] ;
         string user, work;
         public static SerialPort sp = new SerialPort();
+        bool Pause = false;
         string filename = AppDomain.CurrentDomain.BaseDirectory + "control.ini";
         #region dll
         [DllImport("kernel32")]
@@ -46,9 +47,10 @@ namespace Compressor
             sp.Open();
             
         }
-           
+        
         private void MainForm_Load(object sender, EventArgs e)//启动预备
         {
+           
             Initializesp();
             Random x = new Random();
             chart1.Series[0].Points.AddXY(0.1,400);
@@ -77,7 +79,43 @@ namespace Compressor
             Application.Exit();
         }
      
-
+        private void view()
+        {
+            printPreviewDialog1.Document = printDocument1;
+            try
+            {
+                printPreviewDialog1.ShowDialog();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            
+            StringFormat sf = new StringFormat();
+            sf.Alignment = StringAlignment.Center;//居中打印
+            StringFormat sf2 = new StringFormat();
+            sf2.Alignment = StringAlignment.Far;//居右打印   
+            Rectangle destRect = new Rectangle(0, 0, 1049, 670);
+            int top_num = 0;
+            e.Graphics.DrawString("车用空压机试验报告", new Font("黑体", 24), Brushes.Black, new Point(250, top_num += 15));//打印店铺地址
+            e.Graphics.DrawString("公司名：" + "123456", new Font("宋体", 14), Brushes.Black, new Point(250, top_num += 45));//打印店铺地址
+            e.Graphics.DrawString("试验员：" + "XXXXX", new Font("宋体", 14), Brushes.Black, new Point(250, top_num += 35));//打印店铺地址
+            e.Graphics.DrawString("日期：" + "XXXXX", new Font("宋体", 14), Brushes.Black, new Point(500, top_num += 0));
+            e.Graphics.DrawImage(new Bitmap(@"D:\\c1.bmp"), new Point(0, top_num += 25));
+            e.Graphics.DrawString("试验数据", new Font("宋体", 24), Brushes.Black, new Point(500, top_num += 30));
+            e.Graphics.DrawString("气压(Mpa)\n0.1\n0.4\n0.6\n0.8", new Font("宋体", 18), Brushes.Black, new Point(400, top_num += 60));
+            e.Graphics.DrawString("流量(L/min)\n400\n350\n330\n310", new Font("宋体", 18), Brushes.Black, new Point(550, top_num += 0));
+            e.Graphics.DrawString("功率(KW)\n2.2\n2.6\n2.9\n3.0", new Font("宋体", 18), Brushes.Black, new Point(700, top_num += 0));
+            e.Graphics.DrawImage(new Bitmap(@"D:\\c2.bmp"), new Point(30, top_num += 500));
+            e.Graphics.DrawString("装配员1：" + "XXXXX", new Font("宋体", 14), Brushes.Black, new Point(10, top_num += 330));
+            e.Graphics.DrawString("装配员2：" + "XXXXX", new Font("宋体", 14), Brushes.Black, new Point(210, top_num += 0));
+            e.Graphics.DrawString("装配员3：" + "XXXXX", new Font("宋体", 14), Brushes.Black, new Point(410, top_num += 0));
+            e.Graphics.DrawString("装配员4：" + "XXXXX", new Font("宋体", 14), Brushes.Black, new Point(610, top_num += 0));
+            e.Graphics.DrawString("试验结果：合格", new Font("宋体", 24), Brushes.Black, new Point(200, top_num += 40));
+        }
         private void timer1_Tick(object sender, EventArgs e)
         {
 
@@ -104,11 +142,12 @@ namespace Compressor
         }//连接开关
 
         
-        public void ExportChart(string fileName, Chart chart1)//保存图片
+        public void  ExportChart(string fileName, Chart chart1)//保存图片
         {
             string GR_Path = @"D:";
-            string fullFileName = GR_Path + "\\" + fileName + ".png";
-            chart1.SaveImage(fullFileName, ChartImageFormat.Png);
+            string fullFileName = GR_Path + "\\" + fileName + ".bmp";
+            chart1.SaveImage(fullFileName, ChartImageFormat.Bmp);
+            Bitmap bit = new Bitmap(fullFileName);
         }
 
 
@@ -135,7 +174,7 @@ namespace Compressor
             Control.CheckForIllegalCrossThreadCalls = false;
             byte[] bt =new byte[2];
             bt[0] = 0x8E;
-            sp.Write(bt,0,1);
+            sp.Write(bt,0,bt.Length );
             sp.DataReceived += new SerialDataReceivedEventHandler(WorkStageData);
             sp.ReceivedBytesThreshold = 1;
             stagebtn.Enabled = false;
@@ -164,6 +203,7 @@ namespace Compressor
             }
         }
         }
+        
 
         private void Closegetwork_Click(object sender, EventArgs e)
         {
@@ -171,10 +211,19 @@ namespace Compressor
             stagebtn.Enabled = true;
             Closegetwork.Enabled = false;
         }
+
         #endregion
+
+        private void savedata_Click(object sender, EventArgs e)
+        {
+           
+        }
+
         private void teststart_Click(object sender, EventArgs e)
         {
-            ExportChart("dd", chart1);
+            ExportChart("c1", chart1);
+            ExportChart("c2", chart2);
+            view();
         }
         
     }

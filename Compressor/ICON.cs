@@ -27,21 +27,25 @@ namespace Compressor
 
         private void ICON_Load(object sender, EventArgs e)
         {
-            
+            DateTime dt = System.DateTime.Now;
+            label2.Text  ="当前日期"+ dt.ToShortDateString();
+
+
         }
        
         private void button1_Click(object sender, EventArgs e)
         {
             SaveFileDialog s = new SaveFileDialog();
-            s.DefaultExt = "*.png|*.png";
+            s.DefaultExt = "*.bmp|*.bmp";
             s.AddExtension = true;
             try
             {
                 if (s.ShowDialog() == DialogResult.OK)
                 {
                     string content =GetSeriesNumber ( textBox1.Text);
-                    com.google.zxing.common.ByteMatrix mode = new MultiFormatWriter().encode(content, BarcodeFormat.QR_CODE, 350, 350);
-                    picture(mode, System.Drawing.Imaging.ImageFormat.Png, s.FileName);
+                    com.google.zxing.common.ByteMatrix mode =
+                        new MultiFormatWriter().encode(content, BarcodeFormat.QR_CODE, 350, 350);
+                    picture(mode, System.Drawing.Imaging.ImageFormat.Bmp, s.FileName);
                 }
             }
             catch (Exception ex)
@@ -49,14 +53,14 @@ namespace Compressor
                 MessageBox.Show(ex.Message);
             }
         }
-
+      
         public void picture(com.google.zxing.common.ByteMatrix mode, System.Drawing.Imaging.ImageFormat format, string file)
         {
             Bitmap bmap = tobitmap(mode);
             bmap.Save(file, format);
             pictureBox1.Image = bmap;
         }
-        public Bitmap tobitmap(com.google.zxing.common.ByteMatrix mode)
+        public  Bitmap tobitmap(com.google.zxing.common.ByteMatrix mode)
         {
             int width = mode.Width;
             int heigt = mode.Height;
@@ -69,6 +73,11 @@ namespace Compressor
                 }
             }
             return bmap;
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
