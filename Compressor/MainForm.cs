@@ -199,6 +199,11 @@ namespace Compressor
 
         }
 
+        private void getinfo_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
         private void teststart_Click(object sender, EventArgs e)
         {
             ExportChart("dd", chart1);
