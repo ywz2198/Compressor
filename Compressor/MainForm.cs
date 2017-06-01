@@ -49,7 +49,7 @@ namespace Compressor
            
         private void MainForm_Load(object sender, EventArgs e)//启动预备
         {
-            Initializesp();
+            
             Random x = new Random();
             chart1.Series[0].Points.AddXY(0.1,400);
             chart1.Series[0].Points.AddXY(0.4,350);
@@ -63,13 +63,14 @@ namespace Compressor
             chart1.Series[2].Points.AddXY(2.6, 350);
             chart1.Series[2].Points.AddXY(2.9, 330);
             chart1.Series[2].Points.AddXY(3.0, 310);
-
+        
             for(int i = 1; i < 67; i++)
             {
                 chart2.Series[0].Points.AddXY(i, (double)i / 50+x.NextDouble()/30);
             }
             for (int i = 66; i < 101; i++)
                 chart2.Series[0].Points.AddXY(i, 1.32 - (double)(i-66) / 26 + x.NextDouble() / 30);
+            
         }
         #endregion
         private void 退出ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -91,6 +92,7 @@ namespace Compressor
 
         private void button5_Click(object sender, EventArgs e)
         {
+            Initializesp();
             if (sp.IsOpen == false)
             {
                 testcon.Text = "关闭连接";
@@ -172,6 +174,31 @@ namespace Compressor
             Closegetwork.Enabled = false;
         }
         #endregion
+        private void chart1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void getinfo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void teststop_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void testend_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void savedata_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void teststart_Click(object sender, EventArgs e)
         {
             ExportChart("dd", chart1);
