@@ -29,18 +29,18 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea13 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea14 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea15 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series13 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series14 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series15 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea16 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea17 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea18 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series16 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series17 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series18 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.文件数据ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -85,6 +85,7 @@
             this.textBox23 = new System.Windows.Forms.TextBox();
             this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.button5 = new System.Windows.Forms.Button();
             this.textBox13 = new System.Windows.Forms.TextBox();
             this.teststop = new System.Windows.Forms.Button();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
@@ -536,51 +537,52 @@
             // 
             // chart2
             // 
-            chartArea13.AxisX.MajorGrid.Interval = 10D;
-            chartArea13.AxisX.Title = "时间（s）";
-            chartArea13.AxisY.MajorGrid.Enabled = false;
-            chartArea13.AxisY.MajorTickMark.Interval = 0.1D;
-            chartArea13.AxisY.Title = "气压（Mpa）";
-            chartArea13.Name = "ChartArea1";
-            chartArea13.Position.Auto = false;
-            chartArea13.Position.Height = 52F;
-            chartArea13.Position.Width = 95F;
-            chartArea13.Position.Y = 3F;
-            chartArea14.Name = "ChartArea2";
-            chartArea14.Position.Auto = false;
-            chartArea14.Position.Height = 40F;
-            chartArea14.Position.Width = 45F;
-            chartArea14.Position.X = 3F;
-            chartArea14.Position.Y = 58F;
-            chartArea15.Name = "ChartArea3";
-            chartArea15.Position.Auto = false;
-            chartArea15.Position.Height = 40F;
-            chartArea15.Position.Width = 45F;
-            chartArea15.Position.X = 50F;
-            chartArea15.Position.Y = 58F;
-            this.chart2.ChartAreas.Add(chartArea13);
-            this.chart2.ChartAreas.Add(chartArea14);
-            this.chart2.ChartAreas.Add(chartArea15);
+            chartArea1.AxisX.MajorGrid.Interval = 10D;
+            chartArea1.AxisX.Title = "时间（s）";
+            chartArea1.AxisY.MajorGrid.Enabled = false;
+            chartArea1.AxisY.MajorTickMark.Interval = 0.1D;
+            chartArea1.AxisY.Title = "气压（Mpa）";
+            chartArea1.Name = "ChartArea1";
+            chartArea1.Position.Auto = false;
+            chartArea1.Position.Height = 52F;
+            chartArea1.Position.Width = 95F;
+            chartArea1.Position.Y = 3F;
+            chartArea2.Name = "ChartArea2";
+            chartArea2.Position.Auto = false;
+            chartArea2.Position.Height = 40F;
+            chartArea2.Position.Width = 45F;
+            chartArea2.Position.X = 3F;
+            chartArea2.Position.Y = 58F;
+            chartArea3.Name = "ChartArea3";
+            chartArea3.Position.Auto = false;
+            chartArea3.Position.Height = 40F;
+            chartArea3.Position.Width = 45F;
+            chartArea3.Position.X = 50F;
+            chartArea3.Position.Y = 58F;
+            this.chart2.ChartAreas.Add(chartArea1);
+            this.chart2.ChartAreas.Add(chartArea2);
+            this.chart2.ChartAreas.Add(chartArea3);
             this.chart2.Location = new System.Drawing.Point(538, 6);
             this.chart2.Name = "chart2";
-            series13.ChartArea = "ChartArea1";
-            series13.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series13.Name = "Series1";
-            series14.ChartArea = "ChartArea2";
-            series14.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series14.Name = "Series2";
-            series15.ChartArea = "ChartArea3";
-            series15.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series15.Name = "Series3";
-            this.chart2.Series.Add(series13);
-            this.chart2.Series.Add(series14);
-            this.chart2.Series.Add(series15);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series1.Name = "Series1";
+            series2.ChartArea = "ChartArea2";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series2.Name = "Series2";
+            series3.ChartArea = "ChartArea3";
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series3.Name = "Series3";
+            this.chart2.Series.Add(series1);
+            this.chart2.Series.Add(series2);
+            this.chart2.Series.Add(series3);
             this.chart2.Size = new System.Drawing.Size(946, 701);
             this.chart2.TabIndex = 0;
             this.chart2.Text = "chart2";
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.button5);
             this.tabPage1.Controls.Add(this.textBox13);
             this.tabPage1.Controls.Add(this.teststop);
             this.tabPage1.Controls.Add(this.progressBar1);
@@ -600,6 +602,16 @@
             this.tabPage1.Text = "泵测试";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(1152, 701);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(108, 35);
+            this.button5.TabIndex = 35;
+            this.button5.Text = "报表";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click_1);
+            // 
             // textBox13
             // 
             this.textBox13.Location = new System.Drawing.Point(92, 9);
@@ -609,9 +621,9 @@
             // 
             // teststop
             // 
-            this.teststop.Location = new System.Drawing.Point(630, 701);
+            this.teststop.Location = new System.Drawing.Point(636, 701);
             this.teststop.Name = "teststop";
-            this.teststop.Size = new System.Drawing.Size(102, 35);
+            this.teststop.Size = new System.Drawing.Size(108, 35);
             this.teststop.TabIndex = 33;
             this.teststop.Text = "暂停测试";
             this.teststop.UseVisualStyleBackColor = true;
@@ -864,9 +876,9 @@
             // savedata
             // 
             this.savedata.Enabled = false;
-            this.savedata.Location = new System.Drawing.Point(990, 701);
+            this.savedata.Location = new System.Drawing.Point(980, 701);
             this.savedata.Name = "savedata";
-            this.savedata.Size = new System.Drawing.Size(102, 35);
+            this.savedata.Size = new System.Drawing.Size(108, 35);
             this.savedata.TabIndex = 6;
             this.savedata.Text = "保存数据";
             this.savedata.UseVisualStyleBackColor = true;
@@ -875,9 +887,9 @@
             // testend
             // 
             this.testend.Enabled = false;
-            this.testend.Location = new System.Drawing.Point(805, 702);
+            this.testend.Location = new System.Drawing.Point(808, 702);
             this.testend.Name = "testend";
-            this.testend.Size = new System.Drawing.Size(102, 35);
+            this.testend.Size = new System.Drawing.Size(108, 35);
             this.testend.TabIndex = 5;
             this.testend.Text = "终止测试";
             this.testend.UseVisualStyleBackColor = true;
@@ -886,7 +898,7 @@
             // 
             this.teststart.Location = new System.Drawing.Point(464, 702);
             this.teststart.Name = "teststart";
-            this.teststart.Size = new System.Drawing.Size(102, 35);
+            this.teststart.Size = new System.Drawing.Size(108, 35);
             this.teststart.TabIndex = 4;
             this.teststart.Text = "开始测试";
             this.teststart.UseVisualStyleBackColor = true;
@@ -912,80 +924,80 @@
             // 
             // chart1
             // 
-            chartArea16.AlignmentOrientation = ((System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations)((System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.Vertical | System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.Horizontal)));
-            chartArea16.AxisX.MajorGrid.Enabled = false;
-            chartArea16.AxisX.MajorGrid.Interval = 2D;
-            chartArea16.AxisX.MajorTickMark.Interval = 0.2D;
-            chartArea16.AxisX.Minimum = 0D;
-            chartArea16.AxisX.Title = "排气压力（Mpa）";
-            chartArea16.AxisY.MajorGrid.Enabled = false;
-            chartArea16.AxisY.MajorGrid.Interval = 5D;
-            chartArea16.AxisY.MajorTickMark.Interval = 100D;
-            chartArea16.AxisY.Title = "排气量（L/min）";
-            chartArea16.Name = "流压";
-            chartArea16.Position.Auto = false;
-            chartArea16.Position.Height = 45F;
-            chartArea16.Position.Width = 45F;
-            chartArea16.Position.X = 3F;
-            chartArea16.Position.Y = 3F;
-            chartArea17.AlignmentOrientation = System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.Horizontal;
-            chartArea17.AxisX.MajorGrid.Enabled = false;
-            chartArea17.AxisX.MajorTickMark.Interval = 0.2D;
-            chartArea17.AxisX.Minimum = 0D;
-            chartArea17.AxisX.Title = "排气压力（Mpa）";
-            chartArea17.AxisY.MajorGrid.Enabled = false;
-            chartArea17.AxisY.MajorTickMark.Interval = 0.5D;
-            chartArea17.AxisY.Title = "功率（KW）";
-            chartArea17.Name = "功压";
-            chartArea17.Position.Auto = false;
-            chartArea17.Position.Height = 45F;
-            chartArea17.Position.Width = 45F;
-            chartArea17.Position.X = 3F;
-            chartArea17.Position.Y = 50F;
-            chartArea18.AxisX.MajorGrid.Enabled = false;
-            chartArea18.AxisX.MajorTickMark.Interval = 0.5D;
-            chartArea18.AxisX.Title = "功率（KW）";
-            chartArea18.AxisY.MajorGrid.Enabled = false;
-            chartArea18.AxisY.MajorTickMark.Interval = 100D;
-            chartArea18.AxisY.Title = "排气量（L/min）";
-            chartArea18.Name = "流功";
-            chartArea18.Position.Auto = false;
-            chartArea18.Position.Height = 45F;
-            chartArea18.Position.Width = 45F;
-            chartArea18.Position.X = 50F;
-            chartArea18.Position.Y = 50F;
-            this.chart1.ChartAreas.Add(chartArea16);
-            this.chart1.ChartAreas.Add(chartArea17);
-            this.chart1.ChartAreas.Add(chartArea18);
+            chartArea4.AlignmentOrientation = ((System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations)((System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.Vertical | System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.Horizontal)));
+            chartArea4.AxisX.MajorGrid.Enabled = false;
+            chartArea4.AxisX.MajorGrid.Interval = 2D;
+            chartArea4.AxisX.MajorTickMark.Interval = 0.2D;
+            chartArea4.AxisX.Minimum = 0D;
+            chartArea4.AxisX.Title = "排气压力（Mpa）";
+            chartArea4.AxisY.MajorGrid.Enabled = false;
+            chartArea4.AxisY.MajorGrid.Interval = 5D;
+            chartArea4.AxisY.MajorTickMark.Interval = 100D;
+            chartArea4.AxisY.Title = "排气量（L/min）";
+            chartArea4.Name = "流压";
+            chartArea4.Position.Auto = false;
+            chartArea4.Position.Height = 45F;
+            chartArea4.Position.Width = 45F;
+            chartArea4.Position.X = 3F;
+            chartArea4.Position.Y = 3F;
+            chartArea5.AlignmentOrientation = System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.Horizontal;
+            chartArea5.AxisX.MajorGrid.Enabled = false;
+            chartArea5.AxisX.MajorTickMark.Interval = 0.2D;
+            chartArea5.AxisX.Minimum = 0D;
+            chartArea5.AxisX.Title = "排气压力（Mpa）";
+            chartArea5.AxisY.MajorGrid.Enabled = false;
+            chartArea5.AxisY.MajorTickMark.Interval = 0.5D;
+            chartArea5.AxisY.Title = "功率（KW）";
+            chartArea5.Name = "功压";
+            chartArea5.Position.Auto = false;
+            chartArea5.Position.Height = 45F;
+            chartArea5.Position.Width = 45F;
+            chartArea5.Position.X = 3F;
+            chartArea5.Position.Y = 50F;
+            chartArea6.AxisX.MajorGrid.Enabled = false;
+            chartArea6.AxisX.MajorTickMark.Interval = 0.5D;
+            chartArea6.AxisX.Title = "功率（KW）";
+            chartArea6.AxisY.MajorGrid.Enabled = false;
+            chartArea6.AxisY.MajorTickMark.Interval = 100D;
+            chartArea6.AxisY.Title = "排气量（L/min）";
+            chartArea6.Name = "流功";
+            chartArea6.Position.Auto = false;
+            chartArea6.Position.Height = 45F;
+            chartArea6.Position.Width = 45F;
+            chartArea6.Position.X = 50F;
+            chartArea6.Position.Y = 50F;
+            this.chart1.ChartAreas.Add(chartArea4);
+            this.chart1.ChartAreas.Add(chartArea5);
+            this.chart1.ChartAreas.Add(chartArea6);
             this.chart1.Location = new System.Drawing.Point(447, 6);
             this.chart1.Name = "chart1";
-            series16.ChartArea = "流压";
-            series16.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series16.Color = System.Drawing.Color.Maroon;
-            series16.MarkerBorderColor = System.Drawing.Color.Black;
-            series16.MarkerColor = System.Drawing.Color.Black;
-            series16.MarkerSize = 2;
-            series16.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle;
-            series16.Name = "Series1";
-            series16.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Double;
-            series16.YValuesPerPoint = 2;
-            series17.ChartArea = "功压";
-            series17.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series17.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            series17.MarkerColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            series17.MarkerSize = 3;
-            series17.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle;
-            series17.Name = "Series2";
-            series18.ChartArea = "流功";
-            series18.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series18.Color = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            series18.MarkerColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            series18.MarkerSize = 3;
-            series18.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle;
-            series18.Name = "Series3";
-            this.chart1.Series.Add(series16);
-            this.chart1.Series.Add(series17);
-            this.chart1.Series.Add(series18);
+            series4.ChartArea = "流压";
+            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series4.Color = System.Drawing.Color.Maroon;
+            series4.MarkerBorderColor = System.Drawing.Color.Black;
+            series4.MarkerColor = System.Drawing.Color.Black;
+            series4.MarkerSize = 2;
+            series4.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle;
+            series4.Name = "Series1";
+            series4.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Double;
+            series4.YValuesPerPoint = 2;
+            series5.ChartArea = "功压";
+            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series5.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            series5.MarkerColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            series5.MarkerSize = 3;
+            series5.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle;
+            series5.Name = "Series2";
+            series6.ChartArea = "流功";
+            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series6.Color = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            series6.MarkerColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            series6.MarkerSize = 3;
+            series6.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle;
+            series6.Name = "Series3";
+            this.chart1.Series.Add(series4);
+            this.chart1.Series.Add(series5);
+            this.chart1.Series.Add(series6);
             this.chart1.Size = new System.Drawing.Size(1049, 670);
             this.chart1.TabIndex = 1;
             this.chart1.Text = "chart1";
@@ -1372,6 +1384,7 @@
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
         private System.Drawing.Printing.PrintDocument printDocument1;
+        private System.Windows.Forms.Button button5;
     }
 }
 
