@@ -899,7 +899,7 @@
             // 
             // getinfo
             // 
-            this.getinfo.Location = new System.Drawing.Point(416, 278);
+            this.getinfo.Location = new System.Drawing.Point(344, 11);
             this.getinfo.Name = "getinfo";
             this.getinfo.Size = new System.Drawing.Size(97, 23);
             this.getinfo.TabIndex = 2;
