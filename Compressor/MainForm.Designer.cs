@@ -29,18 +29,19 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea9 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea10 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea11 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea12 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series10 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series11 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series12 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.文件数据ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.数据导出ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -84,6 +85,7 @@
             this.textBox23 = new System.Windows.Forms.TextBox();
             this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.button5 = new System.Windows.Forms.Button();
             this.textBox13 = new System.Windows.Forms.TextBox();
             this.teststop = new System.Windows.Forms.Button();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
@@ -139,7 +141,8 @@
             this.label21 = new System.Windows.Forms.Label();
             this.stagebtn = new System.Windows.Forms.Button();
             this.testcon = new System.Windows.Forms.Button();
-            this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
+            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.tabPage3.SuspendLayout();
@@ -579,6 +582,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.button5);
             this.tabPage1.Controls.Add(this.textBox13);
             this.tabPage1.Controls.Add(this.teststop);
             this.tabPage1.Controls.Add(this.progressBar1);
@@ -598,6 +602,16 @@
             this.tabPage1.Text = "泵测试";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(1152, 701);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(108, 35);
+            this.button5.TabIndex = 35;
+            this.button5.Text = "报表";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click_1);
+            // 
             // textBox13
             // 
             this.textBox13.Location = new System.Drawing.Point(92, 9);
@@ -607,9 +621,9 @@
             // 
             // teststop
             // 
-            this.teststop.Location = new System.Drawing.Point(630, 701);
+            this.teststop.Location = new System.Drawing.Point(636, 701);
             this.teststop.Name = "teststop";
-            this.teststop.Size = new System.Drawing.Size(102, 35);
+            this.teststop.Size = new System.Drawing.Size(108, 35);
             this.teststop.TabIndex = 33;
             this.teststop.Text = "暂停测试";
             this.teststop.UseVisualStyleBackColor = true;
@@ -862,19 +876,20 @@
             // savedata
             // 
             this.savedata.Enabled = false;
-            this.savedata.Location = new System.Drawing.Point(990, 701);
+            this.savedata.Location = new System.Drawing.Point(980, 701);
             this.savedata.Name = "savedata";
-            this.savedata.Size = new System.Drawing.Size(102, 35);
+            this.savedata.Size = new System.Drawing.Size(108, 35);
             this.savedata.TabIndex = 6;
             this.savedata.Text = "保存数据";
             this.savedata.UseVisualStyleBackColor = true;
+            this.savedata.Click += new System.EventHandler(this.savedata_Click);
             // 
             // testend
             // 
             this.testend.Enabled = false;
-            this.testend.Location = new System.Drawing.Point(805, 702);
+            this.testend.Location = new System.Drawing.Point(808, 702);
             this.testend.Name = "testend";
-            this.testend.Size = new System.Drawing.Size(102, 35);
+            this.testend.Size = new System.Drawing.Size(108, 35);
             this.testend.TabIndex = 5;
             this.testend.Text = "终止测试";
             this.testend.UseVisualStyleBackColor = true;
@@ -883,7 +898,7 @@
             // 
             this.teststart.Location = new System.Drawing.Point(464, 702);
             this.teststart.Name = "teststart";
-            this.teststart.Size = new System.Drawing.Size(102, 35);
+            this.teststart.Size = new System.Drawing.Size(108, 35);
             this.teststart.TabIndex = 4;
             this.teststart.Text = "开始测试";
             this.teststart.UseVisualStyleBackColor = true;
@@ -900,7 +915,7 @@
             // 
             // getinfo
             // 
-            this.getinfo.Location = new System.Drawing.Point(344, 11);
+            this.getinfo.Location = new System.Drawing.Point(278, 11);
             this.getinfo.Name = "getinfo";
             this.getinfo.Size = new System.Drawing.Size(97, 23);
             this.getinfo.TabIndex = 2;
@@ -1216,6 +1231,20 @@
             this.testcon.UseVisualStyleBackColor = true;
             this.testcon.Click += new System.EventHandler(this.button5_Click);
             // 
+            // printPreviewDialog1
+            // 
+            this.printPreviewDialog1.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog1.Enabled = true;
+            this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
+            this.printPreviewDialog1.Name = "printPreviewDialog1";
+            this.printPreviewDialog1.Visible = false;
+            // 
+            // printDocument1
+            // 
+            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -1357,7 +1386,9 @@
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
+        private System.Drawing.Printing.PrintDocument printDocument1;
+        private System.Windows.Forms.Button button5;
     }
 }
 
