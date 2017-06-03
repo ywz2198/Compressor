@@ -254,7 +254,7 @@ namespace Compressor
 
         private void teststart_Click(object sender, EventArgs e)
         {
-            sp.Open();
+            
             if (Pause != false)
                 test1start();
     
