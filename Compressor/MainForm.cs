@@ -215,13 +215,37 @@ namespace Compressor
         }
 
         #endregion
-
-        private void savedata_Click(object sender, EventArgs e)
+        private void chart1_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void teststart_Click(object sender, EventArgs e)
+        private void getinfo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void teststop_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void testend_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void savedata_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void getinfo_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_Click_1(object sender, EventArgs e)
         {
             ExportChart("c1", chart1);
             ExportChart("c2", chart2);
@@ -230,7 +254,7 @@ namespace Compressor
 
         private void teststart_Click(object sender, EventArgs e)
         {
-            
+            sp.Open();
             if (Pause != false)
                 test1start();
     
@@ -239,7 +263,35 @@ namespace Compressor
         private void test1start()
         {
             string sendtext = "AA 55 01";
+        
+            string[] temp = sendtext.Split(' ');
+            byte[] b = new byte[temp.Length];
+            for (int i = 0; i < temp.Length; i++)
+            {
+                if (temp[i].Length > 0)
+                    b[i] = Convert.ToByte(temp[i], 16);
+            }
 
+
+        }
+        private string Noor(string st)
+        {
+            string[] HexStr = st.Trim().Split(' ');
+            byte[] Hexbyte = new byte[HexStr.Length];
+            byte check = 0;
+            check = (byte)(Convert.ToByte(HexStr[0], 16) ^ Convert.ToByte(HexStr[1], 16));
+            for (int i = 2; i < HexStr.Length; i++)
+            {
+                check = (byte)(check ^ Convert.ToByte(HexStr[i], 16));
+            }
+            string CheckSumHex = Convert.ToString(check, 16);
+            if (CheckSumHex.Length == 1)
+            {
+                CheckSumHex = "0" + CheckSumHex;
+            }
+
+            return st.Trim() + " " + CheckSumHex.ToUpper();
+        }
     }
 }
 
