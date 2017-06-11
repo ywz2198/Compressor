@@ -969,8 +969,8 @@
             this.chart1.ChartAreas.Add(chartArea4);
             this.chart1.ChartAreas.Add(chartArea5);
             this.chart1.ChartAreas.Add(chartArea6);
-            this.chart1.Location = new System.Drawing.Point(335, 5);
-            this.chart1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chart1.Location = new System.Drawing.Point(392, 19);
+            this.chart1.Margin = new System.Windows.Forms.Padding(2);
             this.chart1.Name = "chart1";
             series4.ChartArea = "流压";
             series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
@@ -999,7 +999,7 @@
             this.chart1.Series.Add(series4);
             this.chart1.Series.Add(series5);
             this.chart1.Series.Add(series6);
-            this.chart1.Size = new System.Drawing.Size(787, 536);
+            this.chart1.Size = new System.Drawing.Size(1017, 678);
             this.chart1.TabIndex = 1;
             this.chart1.Text = "chart1";
             // 
