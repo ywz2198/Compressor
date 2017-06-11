@@ -12,6 +12,7 @@ namespace Compressor
 {
     public partial class ICON : Form
     {
+
         public ICON()
         {
             InitializeComponent();
@@ -24,42 +25,62 @@ namespace Compressor
             return date+serial;
         }
      
-
+        data d = new data();
         private void ICON_Load(object sender, EventArgs e)
         {
-            DateTime dt = System.DateTime.Now;
-            label2.Text  ="当前日期"+ dt.ToShortDateString();
-
+           
+           
+            
+          
+            
 
         }
-       
+       /// <summary>
+       /// 生成二维码
+       /// </summary>
+       /// <param name="sender"></param>
+       /// <param name="e"></param>
         private void button1_Click(object sender, EventArgs e)
         {
-            SaveFileDialog s = new SaveFileDialog();
-            s.DefaultExt = "*.bmp|*.bmp";
-            s.AddExtension = true;
+          
             try
             {
-                if (s.ShowDialog() == DialogResult.OK)
-                {
-                    string content =GetSeriesNumber ( textBox1.Text);
-                    com.google.zxing.common.ByteMatrix mode =
-                        new MultiFormatWriter().encode(content, BarcodeFormat.QR_CODE, 350, 350);
-                    picture(mode, System.Drawing.Imaging.ImageFormat.Bmp, s.FileName);
-                }
+              
+                
+                    
+                    string file = System.DateTime.Now.ToString("yyymmddhhmmss");
+
+                    string adress = System.AppDomain.CurrentDomain.BaseDirectory+"\\"+"二维码"+"\\"+file+".png";
+                   
+                    string content =d.insert1().ToString();
+                label3.Text = content;
+                    com.google.zxing.common.ByteMatrix mode = new MultiFormatWriter().encode(content, BarcodeFormat.QR_CODE, 350, 350);
+                    picture(mode, adress);
+               
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
         }
-      
-        public void picture(com.google.zxing.common.ByteMatrix mode, System.Drawing.Imaging.ImageFormat format, string file)
+      /// <summary>
+      /// 显示二维码
+      /// </summary>
+      /// <param name="mode"></param>
+      /// <param name="format"></param>
+      /// <param name="file"></param>
+        public void picture(com.google.zxing.common.ByteMatrix mode, string file)
         {
             Bitmap bmap = tobitmap(mode);
-            bmap.Save(file, format);
+            bmap.Save(file);
             pictureBox1.Image = bmap;
         }
+
+        /// <summary>
+        /// 对二维码图片进行设计
+        /// </summary>
+        /// <param name="mode"></param>
+        /// <returns></returns>
         public  Bitmap tobitmap(com.google.zxing.common.ByteMatrix mode)
         {
             int width = mode.Width;
@@ -74,10 +95,32 @@ namespace Compressor
             }
             return bmap;
         }
+        /// <summary>
+        /// 打印
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
 
-        private void label1_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
 
+        }
+        /// <summary>
+        /// 读取二维码
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void button3_Click(object sender, EventArgs e)
+        {
+           
+            
+           
+            
+        }
+
+        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            
         }
     }
 }

@@ -41,8 +41,18 @@ namespace Compressor.Model
 			get { return _Job; }
 			set { _Job = value; }
 		}
-     
-        
+        /// <summary>
+        /// 获取或设置Age的值
+        /// </summary>
+        public string _Age;
+        public string Age
+        {
+            get { return _Age; }
+            set { _Age = value; }
+        }
 
-	}
+
+
+
+    }
 }

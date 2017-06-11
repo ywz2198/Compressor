@@ -14,18 +14,23 @@ using System.Runtime.InteropServices;
 using System.Collections.Specialized;
 using Compressor.BLL;
 using Compressor.Model;
+using Compressor.DAL;
 namespace Compressor
 {
     public partial class MainForm : Form
     {
+        Series series3 = new Series("series3");
         string[] Stage = new string[12];
         StringBuilder baudrate = new StringBuilder(255);//基本数据初始化
         StringBuilder portname = new StringBuilder(255);
         public static double[] x = new double[100] ;
-        string user, work;
+       // string user, work;
+        string liuliang;
         public static SerialPort sp = new SerialPort();
-        bool Pause = false;
+       // bool Pause = false;
         string filename = AppDomain.CurrentDomain.BaseDirectory + "control.ini";
+        public int[] a = new int[100];//实验二数据
+        data d = new data();
         #region dll
         [DllImport("kernel32")]
         private static extern bool WritePrivateProfileString(string section, string key, string val, string filePath);
@@ -36,7 +41,14 @@ namespace Compressor
         public MainForm()
         {
             InitializeComponent();
+            
+
+
+
         }
+        
+
+
         private void Initializesp()
         {
             GetPrivateProfileString("Port", "Baud", "9600", baudrate, 255, filename);
@@ -47,16 +59,15 @@ namespace Compressor
             sp.Open();
             
         }
-           
-        private void MainForm_Load(object sender, EventArgs e)//启动预备
+           /// <summary>
+           /// 启动预备
+           /// </summary>
+           /// <param name="sender"></param>
+           /// <param name="e"></param>
+        private void MainForm_Load(object sender, EventArgs e)
         {
-           
-            Initializesp();
+
             Random x = new Random();
-            chart1.Series[0].Points.AddXY(0.1,400);
-            chart1.Series[0].Points.AddXY(0.4,350);
-            chart1.Series[0].Points.AddXY(0.6, 330);
-            chart1.Series[0].Points.AddXY(0.8, 310);
             chart1.Series[1].Points.AddXY(0.1, 2.2);
             chart1.Series[1].Points.AddXY(0.4, 2.6);
             chart1.Series[1].Points.AddXY(0.6, 2.9);
@@ -72,6 +83,10 @@ namespace Compressor
             }
             for (int i = 66; i < 101; i++)
                 chart2.Series[0].Points.AddXY(i, 1.32 - (double)(i-66) / 26 + x.NextDouble() / 30);
+
+
+            
+          
             
         }
         #endregion
@@ -79,7 +94,9 @@ namespace Compressor
         {
             Application.Exit();
         }
-     
+     /// <summary>
+     /// 打印预览
+     /// </summary>
         private void view()
         {
             printPreviewDialog1.Document = printDocument1;
@@ -92,6 +109,11 @@ namespace Compressor
                 throw ex;
             }
         }
+        /// <summary>
+        /// 打印设置
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
 
@@ -117,6 +139,11 @@ namespace Compressor
             e.Graphics.DrawString("装配员4：" + "XXXXX", new Font("宋体", 14), Brushes.Black, new Point(610, top_num += 0));
             e.Graphics.DrawString("试验结果：合格", new Font("宋体", 24), Brushes.Black, new Point(200, top_num += 40));
         }
+        /// <summary>
+        /// 定时事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void timer1_Tick(object sender, EventArgs e)
         {
 
@@ -143,13 +170,16 @@ namespace Compressor
             }
         }//连接开关
 
-        
-        public void  ExportChart(string fileName, Chart chart1)//保存图片
+        /// <summary>
+        /// 保存图片
+        /// </summary>
+        /// <param name="fileName"></param>
+        /// <param name="chart1"></param>
+        public void  ExportChart(string fileName, Chart chart1)
         {
-            string GR_Path = @"D:";
-            string fullFileName = GR_Path + "\\" + fileName + ".bmp";
+            string fullFileName =System.AppDomain.CurrentDomain.BaseDirectory+"\\"+"报表" + "\\" + fileName + ".bmp";
             chart1.SaveImage(fullFileName, ChartImageFormat.Bmp);
-            Bitmap bit = new Bitmap(fullFileName);
+           // Bitmap bit = new Bitmap(fullFileName);
         }
 
 
@@ -215,10 +245,7 @@ namespace Compressor
         }
 
         #endregion
-        private void chart1_Click(object sender, EventArgs e)
-        {
-
-        }
+      
 
         private void getinfo_Click(object sender, EventArgs e)
         {
@@ -251,14 +278,25 @@ namespace Compressor
             ExportChart("c2", chart2);
             view();
         }
-
+        /// <summary>
+        /// 测试数据
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void teststart_Click(object sender, EventArgs e)
         {
-            sp.Open();
-            if (Pause != false)
-                test1start();
-    
+            /* sp.Open();
+             if (Pause != false)
+                 test1start();  */
 
+
+            sp da = new sp();
+            liuliang = da.spd();
+            settable();
+            fillstable(liuliang);
+            line();
+            suofang();
+            d.add(liuliang, 3, 4, d.create());
         }
         private void test1start()
         {
@@ -274,6 +312,7 @@ namespace Compressor
 
 
         }
+
         private string Noor(string st)
         {
             string[] HexStr = st.Trim().Split(' ');
@@ -292,6 +331,122 @@ namespace Compressor
 
             return st.Trim() + " " + CheckSumHex.ToUpper();
         }
+
+        /// <summary>
+        /// 建立数据表
+        /// </summary>
+        public void settable()
+        {
+            dataGridView1.ColumnCount = 4;
+            dataGridView1.Columns[0].Name = "时间";
+            dataGridView1.Columns[1].Name = "流量";
+            dataGridView1.Columns[2].Name = "功率";
+            dataGridView1.Columns[3].Name = "气压";
+            dataGridView1.RowHeadersWidth = 55;
+        }
+       /// <summary>
+        /// 填充数据表
+        /// </summary>
+       public void fillstable(string c)
+        {
+
+            string[] strContent = c.Split(null);
+            int k = -1;
+            foreach (string i in strContent)
+            {
+                if (i != "")
+                {
+                    k = k + 1;
+                    int j = int.Parse(i);
+                    a[k] = j;
+                }
+            }
+            for (int i = 0; i < 100; i++)
+            {
+                dataGridView1.Rows.Add();
+                dataGridView1.Rows[i].HeaderCell.Value = (i+1).ToString();
+                dataGridView1[0, i].Value = 100 - i;
+                dataGridView1[1, i].Value = a[i].ToString();             
+            }
+        }
+        /// <summary>
+        /// 数据入库
+        /// </summary>
+        public void database()
+        {
+
+        }
+
+        private void getinfo_Click_2(object sender, EventArgs e)
+        {
+
+        }
+
+        private void teststop_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void testend_Click_1(object sender, EventArgs e)
+        {
+
+        }
+        /// <summary>
+        /// 数据回读
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            settable();
+
+            fillstable(d.insert(Int64.Parse(textBox20.Text)));
+            line();
+                
+            
+                
+        }
+
+        /// <summary>
+        /// 曲线图
+        /// </summary>
+        public void line()
+        {
+            series3.ChartType = SeriesChartType.Spline;
+            chart3.Series.Add(series3);
+            for(int i=0;i<100;i++)
+            {
+                series3.Points.AddXY(i, dataGridView1[1, i].Value);
+            }
+        }
+        /// <summary>
+        /// 数据的缩放
+        /// </summary>
+        public void suofang()
+        {
+            chart3.ChartAreas[0].AxisX.ScaleView.Zoom(2, 3);
+            // Enable range selection and zooming end user interface
+            chart3.ChartAreas[0].CursorX.IsUserEnabled = true;
+            chart3.ChartAreas[0].CursorX.IsUserSelectionEnabled = true;
+            chart3.ChartAreas[0].AxisX.ScaleView.Zoomable = true;
+
+            //将滚动内嵌到坐标轴中
+            chart3.ChartAreas[0].AxisX.ScrollBar.IsPositionedInside = true;
+
+            // 设置滚动条的大小
+            chart3.ChartAreas[0].AxisX.ScrollBar.Size = 10;
+
+            // 设置滚动条的按钮的风格，下面代码是将所有滚动条上的按钮都显示出来
+            chart3.ChartAreas[0].AxisX.ScrollBar.ButtonStyle = ScrollBarButtonStyles.All;
+
+            // 设置自动放大与缩小的最小量
+            chart3.ChartAreas[0].AxisX.ScaleView.SmallScrollSize = double.NaN;
+            chart3.ChartAreas[0].AxisX.ScaleView.SmallScrollMinSize = 2;
+
+
+        }
+      
     }
 }
 

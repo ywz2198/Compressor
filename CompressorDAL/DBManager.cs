@@ -18,7 +18,7 @@ namespace Compressor.DAL
 		/// <summary>
 		/// 连接字符串
 		/// </summary>
-		private static string connStr=@"Server=.;uid=lol;pwd=lol;database=Compressor";
+		private static string connStr= "Data Source=.;Initial Catalog=空压机实验平台;User ID=sa;Password=ftq62017";
 
 		/// <summary>
 		/// 获取一个新的连接

@@ -7,7 +7,7 @@ using System.Data.SqlClient;
 namespace Compressor.DAL
 {
 	/// <summary>
-	/// CardDAL类
+	/// 数据访问层
 	/// BY：狂人代码生成器 V1.0
 	/// 作者：金属狂人
 	/// 日期：2017年05月11日 02:23:48
@@ -102,9 +102,9 @@ namespace Compressor.DAL
             string _CardID = info.CardID;
 			string _Name = info.Name;
 			string _Job = info.Job;
-
-			string sql="INSERT INTO Card VALUES (@_CardID,@_Name,@_Job)";
-			int rst = DBManager.ExecuteUpdate(sql, new object[] {new SqlParameter("@_CardID",_CardID ), new SqlParameter("@_Name",_Name),new SqlParameter("@_Job",_Job) });
+            string _Age = info.Age;
+			string sql="INSERT INTO 操作员表 VALUES (@_CardID,@_Name,@_Job,@_Age)";
+			int rst = DBManager.ExecuteUpdate(sql, new object[] {new SqlParameter("@_CardID",_CardID ), new SqlParameter("@_Name",_Name),new SqlParameter("@_Job",_Job), new SqlParameter("@_Age", _Age) });
 			if(rst>0)
 			{ 
 				return true;
