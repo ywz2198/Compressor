@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Compressor
+namespace ManageSystem.Common
 {
     static class Program
     {
@@ -16,8 +16,7 @@ namespace Compressor
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new 操作员());
-          //  Application.Run(new Login());
+            Application.Run(new Form1());
         }
     }
 }

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Compressor", "Compressor\Compressor.csproj", "{12A1AF8E-A459-49DE-9502-C5B2716B81B6}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompressorDAL", "CompressorDAL\CompressorDAL.csproj", "{636D6980-DC29-4609-909D-C0DCB1A5EA36}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompressorModel", "CompressorModel\CompressorModel.csproj", "{33034AA6-96A6-44C6-AAA1-FC784BF62D7B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompressorCommon", "CompressorCommon\CompressorCommon.csproj", "{7C9A4CED-1581-4201-A0BE-64FD399E8FD0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{33034AA6-96A6-44C6-AAA1-FC784BF62D7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{33034AA6-96A6-44C6-AAA1-FC784BF62D7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{33034AA6-96A6-44C6-AAA1-FC784BF62D7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C9A4CED-1581-4201-A0BE-64FD399E8FD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C9A4CED-1581-4201-A0BE-64FD399E8FD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C9A4CED-1581-4201-A0BE-64FD399E8FD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C9A4CED-1581-4201-A0BE-64FD399E8FD0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

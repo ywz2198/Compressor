@@ -59,6 +59,7 @@
     <Compile Include="Config.Designer.cs">
       <DependentUpon>Config.cs</DependentUpon>
     </Compile>
+    <Compile Include="data.cs" />
     <Compile Include="ICON.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,8 +78,33 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="sp.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="删除操作员信息.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="删除操作员信息.Designer.cs">
+      <DependentUpon>删除操作员信息.cs</DependentUpon>
+    </Compile>
+    <Compile Include="操作员.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="操作员.Designer.cs">
+      <DependentUpon>操作员.cs</DependentUpon>
+    </Compile>
+    <Compile Include="操作员信息更新.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="操作员信息更新.Designer.cs">
+      <DependentUpon>操作员信息更新.cs</DependentUpon>
+    </Compile>
+    <Compile Include="操作员身份注册.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="操作员身份注册.Designer.cs">
+      <DependentUpon>操作员身份注册.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Config.resx">
       <DependentUpon>Config.cs</DependentUpon>
     </EmbeddedResource>
@@ -101,6 +127,18 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="删除操作员信息.resx">
+      <DependentUpon>删除操作员信息.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="操作员.resx">
+      <DependentUpon>操作员.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="操作员信息更新.resx">
+      <DependentUpon>操作员信息更新.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="操作员身份注册.resx">
+      <DependentUpon>操作员身份注册.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -118,6 +156,10 @@
     <ProjectReference Include="..\CompressorBLL\CompressorBLL.csproj">
       <Project>{c603cb86-c0b0-4e33-94cb-21f00c66b023}</Project>
       <Name>CompressorBLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CompressorCommon\CompressorCommon.csproj">
+      <Project>{7c9a4ced-1581-4201-a0be-64fd399e8fd0}</Project>
+      <Name>CompressorCommon</Name>
     </ProjectReference>
     <ProjectReference Include="..\CompressorDAL\CompressorDAL.csproj">
       <Project>{636d6980-dc29-4609-909d-c0dcb1a5ea36}</Project>
